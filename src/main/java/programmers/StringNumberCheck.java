@@ -2,7 +2,7 @@ package programmers;
 
 import java.util.Scanner;
 
-public class Solution {
+public class StringNumberCheck {
     // 문자열 다루기 기본
     public boolean solution(String s) {
         if (s.length() != 4 && s.length() != 6) return false;
@@ -16,7 +16,7 @@ public class Solution {
     }
 
     public static void main(String[] args) {
-        Solution s = new Solution();
+        StringNumberCheck s = new StringNumberCheck();
         String st;
         Scanner sc = new Scanner(System.in);
 
