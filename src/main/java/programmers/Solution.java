@@ -1,28 +1,30 @@
 package programmers;
 
+import java.util.Scanner;
+
 public class Solution {
     // 문자열 다루기 기본
     public boolean solution(String s) {
-        boolean answer = true;
-        if (s.length() == 4 || s.length() == 6) {
-            for(int i=0;i<s.length();i++) {
-                char ch = s.charAt(i);
-                System.out.println("ch : " +ch);
+        if (s.length() != 4 && s.length() != 6) return false;
 
-                if(!Character.isDigit(ch)) {
-                    answer = false;
-                    return answer;
-                }
+        for (char chh: s.toCharArray()) {
+            if (!Character.isDigit(chh)) {
+                return false;
             }
-            return answer;
-        } else
-            return false;
-
+        }
+            return true;
     }
 
     public static void main(String[] args) {
         Solution s = new Solution();
-        String st = "123";
+        String st;
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("문자를 입력하세요 :");
+
+        st = sc.nextLine();
+
+        System.out.println("입력받은 문자 : " + st);
 
         if (st.length() >= 1 && st.length() <= 8) {
             System.out.println(s.solution(st));
