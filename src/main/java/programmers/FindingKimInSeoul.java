@@ -11,19 +11,9 @@ public class FindingKimInSeoul {
     */
 
     public String solution(String[] seoul) {
-        String answer = "";
+        int a = Arrays.asList(seoul).indexOf("Kim");
 
-        for(int i = 0; i<seoul.length; i++) {
-            String name = seoul[i];
-            int index = name.indexOf("Kim");
-
-            if(index == 0) {
-                answer = "김서방은 " + i + "에 있다";
-                break;
-            }
-        }
-
-        return answer;
+        return "김서방은 " + a + "에 있다";
     }
 
     public String solution2(String[] seoul) {
