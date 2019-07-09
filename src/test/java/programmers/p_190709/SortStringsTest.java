@@ -18,7 +18,6 @@ class SortStringsTest {
 
 
         String[] c = sortStrings.solution(b,1);
-        //assertEquals(a,c);
         assertEquals(Arrays.toString(a),Arrays.toString(c));
 
     }

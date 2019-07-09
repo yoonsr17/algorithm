@@ -26,6 +26,7 @@ public class SortStrings {
                     changed = true;
                 }
                 // 인덱스 n번째 문자가 같은 문자열이 여럿 일 경우, 사전순으로 앞선 문자열이 앞쪽에 위치
+
             }
 
             if(!changed) break;
